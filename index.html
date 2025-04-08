@@ -12,18 +12,21 @@
             align-items: center;   /* Center vertically */
             min-height: 100vh;     /* Ensure body takes full viewport height */
             margin: 0;             /* Remove default body margin */
-            overflow: hidden;      /* Hide scrollbars if video fits */
+            /* overflow: hidden; <-- This remains removed/commented out */
         }
         video {
             max-width: 95%;        /* Prevent video exceeding screen width */
-            max-height: 95vh;       /* Prevent video exceeding screen height */
+            /* CHANGED: Reduced max-height to leave more room for controls */
+            max-height: 85vh;
             display: block;        /* Helps with layout */
         }
     </style>
 </head>
 <body>
+
     <video controls src="nid.mp4">
         Your browser does not support the video tag. Please update your browser.
     </video>
-    </body>
+
+</body>
 </html>
